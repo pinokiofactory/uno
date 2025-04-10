@@ -1,4 +1,13 @@
 {
-  "links": [],
+  "links": [
+    {
+      "title": "x",
+      "value": "https://x.com/cocktailpeanut"
+    },
+    {
+      "title": "github",
+      "value": "https://github.com/cocktailpeanut"
+    }
+  ],
   "posts": []
 }
