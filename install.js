@@ -23,6 +23,18 @@ module.exports = {
     },
     // Edit this step with your custom install commands
     {
+      when: "{{platform === 'linux'}}",
+      method: "shell.run",
+      params: {
+        venv: "env",                // Edit this to customize the venv folder path
+        path: "app",                // Edit this to customize the path to start the shell from
+        message: [
+          "uv pip install deepspeed==0.14.4" 
+        ]
+      }
+    },
+    // Edit this step with your custom install commands
+    {
       method: "shell.run",
       params: {
         venv: "env",                // Edit this to customize the venv folder path
