@@ -84,7 +84,7 @@ module.exports = {
         }, {
           icon: "fa-regular fa-circle-xmark",
           text: "<div><strong>Reset</strong><div>Revert to pre-install state</div></div>",
-          href: "reset.json",
+          href: "reset.js",
           confirm: "Are you sure you wish to reset the app?"
 
         }]
