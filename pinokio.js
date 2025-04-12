@@ -65,9 +65,15 @@ module.exports = {
         }]
       } else {
         return [{
-          default: true,
           icon: "fa-solid fa-power-off",
-          text: "Start",
+          text: "Start FP8 Model (Low VRAM)",
+          href: "start.js",
+          params: {
+            name: "flux-dev-fp8"
+          }
+        }, {
+          icon: "fa-solid fa-power-off",
+          text: "Start Full Model (High VRAM)",
           href: "start.js",
         }, {
           icon: "fa-solid fa-plug",

@@ -8,7 +8,7 @@ module.exports = {
         env: { },                   // Edit this to customize environment variables (see documentation)
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
-          "python app.py --offload --name flux-dev-fp8"
+          "python app.py --offload {{args && args.name ? '--name ' + args.name : ''}}"
         ],
         on: [{
           // The regular expression pattern to monitor.
